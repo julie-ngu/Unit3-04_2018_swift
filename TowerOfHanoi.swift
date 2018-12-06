@@ -39,7 +39,7 @@ if disks == 0 {
     print("Error")
 }
 else {
-    var min = minMoves(num: disks)
+    let min = minMoves(num: disks)
     
     print("Minimum number of moves: \(min)")
     moves(num: disks, startPole: poleA, endPole: poleB, auxPole: poleC)
