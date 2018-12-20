@@ -6,15 +6,18 @@
 import Foundation
 
 func minMoves(num: Int) -> Decimal {
+    // returns minimum number of moves
     var moves = pow(2, num) - 1
     return moves
 }
 
 func printMoves(num: Int, startPole: String, endPole: String) {
+    // prints out instructions for move
     print("Move disk \(num) from \(startPole) to \(endPole).")
 }
 
 func moves(num: Int, startPole: String, endPole: String, auxPole: String) {
+    // calculates best solution for where to move disks and solve problem
     if(num == 1) {
         printMoves(num: num, startPole: startPole, endPole: endPole)
     }
